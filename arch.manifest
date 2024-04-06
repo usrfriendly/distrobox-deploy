@@ -1,0 +1,7 @@
+# Manifest file for a minimal Arch container solely for TidalCycles
+[arch] # using normal home, should be cleaner than any process needing cabal-install
+image=quay.io/toolbx/arch-toolbox:latest
+additional_packages="supercollider sc3-plugins haskell-tidal pipewire wireplumber pipewire-jack"
+replace=false
+
+

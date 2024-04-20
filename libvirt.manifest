@@ -1,0 +1,15 @@
+[libvirt]
+image=quay.io/toolbx/arch-toolbox
+pull=true
+init=true
+root=true
+entry=true
+replace=true
+start_now=false
+unshare_all=true
+additional_packages="libvirt virt-manager"
+# Basic utilities for terminal use
+# init_hooks="sudo systemctl enable virtd;"
+# init_hooks="usermod -aG libvirt ${USER};"
+# Export virt-manager
+exported_apps="virt-manager"

@@ -1,9 +1,6 @@
 [kxstudio]
 image=quay.io/toolbx/ubuntu-toolbox:latest
 additional_packages="pipewire pipewire-audio-client-libraries wireplumber apt-transport-https gpgv wget"
-init_hooks="wget https=//launchpad.net/~kxstudio-debian/+archive/kxstudio/+files/kxstudio-repos_11.1.0_all.deb"
-init_hooks="sudo dpkg -i kxstudio-repos_11.1.0_all.deb"
-init_hooks="sudo apt update"
-exported-apps="SuperCollider"
-exported-apps="Cardinal"
-exported-bins="/usr/bin/ghci"
+init_hooks="wget https=//launchpad.net/~kxstudio-debian/+archive/kxstudio/+files/kxstudio-repos_11.1.0_all.deb &
+init_hooks="sudo dpkg -i kxstudio-repos_11.1.0_all.deb &"
+init_hooks="sudo apt update &"

@@ -1,0 +1,11 @@
+bitwig-studio
+cardinal
+carla
+ft2-clone
+plugdata-bin
+sc3-plugins
+schismtracker
+stochas
+supercollider
+surge-xt
+yabridge-bin

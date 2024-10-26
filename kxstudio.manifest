@@ -1,6 +1,5 @@
 [kxstudio]
-image=quay.io/toolbx/ubuntu-toolbox:latest
+image=ghcr.io/usrfriendly/kxstudio-toolbox:latest
+home=~/Documents/Containers/kxstudio
 additional_packages="pipewire pipewire-audio-client-libraries wireplumber apt-transport-https gpgv wget"
-init_hooks="wget https=//launchpad.net/~kxstudio-debian/+archive/kxstudio/+files/kxstudio-repos_11.1.0_all.deb &
-init_hooks="sudo dpkg -i kxstudio-repos_11.1.0_all.deb &"
-init_hooks="sudo apt update &"
+additional_packages="carla cardinal carla-bridge-wine32 carla-bridge-wine64"

@@ -1,6 +1,7 @@
 # Manifest file for a minimal Arch container solely for TidalCycles
-[arch] # using normal home, should be cleaner than any process needing cabal-install
-image=quay.io/toolbx/arch-toolbox:latest
+[arch-music] # using normal home, should be cleaner than any process needing cabal-install
+home=~/Documents/Containers/arch-music
+image=ghcr.io/ublue-os/arch-distrobox:latest
 additional_packages="supercollider sc3-plugins haskell-tidal pipewire wireplumber pipewire-jack cardinal carla"
 replace=true
 exported_apps="SuperCollider"

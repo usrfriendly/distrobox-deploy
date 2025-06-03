@@ -1,0 +1,9 @@
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Type = Package
+Target = xdg-utils
+[Action]
+Description = Replace xdg-open with distrobox-host-exec
+When = PostTransaction
+Exec = /etc/distrobox_xdg_hook.sh
